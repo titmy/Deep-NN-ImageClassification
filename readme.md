@@ -11,6 +11,8 @@ Have tensorflow installed with dependencies. You can use docker container which 
 ### Prerequisites
 
 #### Using Docker
+[Follow Link] (https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0)
+
 What things you need to install the software and how to install them
 
 * Install TF Image
