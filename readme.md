@@ -1,19 +1,53 @@
-Download all TensorFlow dependencies first for your machine
+# Project Title
 
-Added:
-20 NOV 16: NN.py: Practice implementation of simple 3 layer NN with TensorFlow
+Deep Neural Network Image Classifier for classifying warehouse products at Lowes to assist in inventory upkeep
 
-29 NOV 16: label_image.py:
+## Getting Started
 
-1. Use a docker container env for dependencies
-Instructions
-  a) Install Docker
-  b) Install TF Image
-  c) Download dataset
-  d) Link dataset to TF image 
-  e) Train with pre-written script in examples
-  f) Classify with label_image.py
-  
-2. Install all tensorflow dependencies on machine 
-Instructions
-  a) Continue with steps c,e,f
+Have tensorflow installed with dependencies. You can use docker container which would speed up development and production. Solves dependencies issues when shipping.
+
+[Download Docker](https://www.docker.com)
+
+### Prerequisites
+
+#### Using Docker
+What things you need to install the software and how to install them
+
+* Install TF Image
+```
+docker run -it gcr.io/tensorflow/tensorflow:latest-devel
+# cd/tensorflow
+gitpull
+```
+* Link Dataset to TF Image
+```
+docker run -it -v path_to_files/tf_files/folder_with_images gcr.io/tensorflow/tensorflow:latest-devel
+```
+* Run pre-written training script in tensorflow/examples
+```
+# python tensorflow/examples/image_retraining/retrain.py \
+--bottleneck_dir=/tf_files/bottlenecks \
+--how_many_training_steps 500 \
+--model_dir=/tf_files/inception \
+--output_graph=/tf_files/retrained_graph.pb \
+--output_labels=/tf_files/retrained_labels.txt \
+--image_dir /tf_files/flower_photos
+```
+
+or
+
+#### Using on machine tensor
+[Follow tensorflow website] (https://www.tensorflow.org/versions/r0.12/get_started/os_setup.html#requirements)
+
+
+
+### Implementation 
+
+```
+python label_image.py path_to_file/filename.jpg
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
