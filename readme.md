@@ -6,12 +6,12 @@ Deep Neural Network Image Classifier for classifying warehouse products at Lowes
 
 Have tensorflow installed with dependencies. You can use docker container which would speed up development and production. Solves dependencies issues when shipping.
 
-[All Instructions here for docker] (https://www.docker.com)
+[Docker] (https://www.docker.com)
 
 ### Prerequisites
 
 #### Using Docker
-[Follow Link] (https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0)
+[All Instructions here for docker] (https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/?utm_campaign=chrome_series_machinelearning_063016&utm_source=gdev&utm_medium=yt-desc#0)
 
 What things you need to install the software and how to install them
 
